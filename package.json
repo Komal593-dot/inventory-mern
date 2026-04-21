@@ -1,0 +1,12 @@
+{
+  "name": "inventory-mern",
+  "version": "1.0.0",
+  "scripts": {
+    "start-client": "npm start --prefix frontend",
+    "start-server": "npx nodemon backend/server.js",
+    "dev": "concurrently \"npm run start-server\" \"npm run start-client\""
+  },
+  "dependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
